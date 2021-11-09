@@ -13,6 +13,20 @@
     </ion-toolbar>
     <img src="http://www.cuenca.gob.ec/sites/all/themes/eventus/logo.png" alt="Logo">
   </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">correo</ion-label>
+        <ion-input type="string" [(ngModel)]="correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">password</ion-label>
+        <ion-input type="number" password="contraseña" [(ngModel)]="password"></ion-input>
+        <ion-button buttonType="password" (click)="iniciar()" color="danger" >iniciar sesion</ion-button>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
 <h1>Prueba</h1>
   <div id="container">
     <strong>Ready to create an app?</strong>
